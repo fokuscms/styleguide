@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta charset="utf-8"/>
+    <title>fokus&sup2; - Die n&auml;chste Generation</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="./dist/css/style.min.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body class="sg">
+
+<div class="container">
+    <h1>fokus&sup2; Styleguide</h1>
+    <p>
+        This is the official styleguide for the <a href="#">fokus&sup2; CMS</a>
+    </p>
+    <h2>Grid System</h2>
+
+    <div class="sg-col">
+        <div class="row">
+            <div class="col col-md-12">col md 12</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-6">col md 6</div>
+            <div class="col col-md-6">col md 6</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-4">col md 4</div>
+            <div class="col col-md-4">col md 4</div>
+            <div class="col col-md-4">col md 4</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-3">col md 3</div>
+            <div class="col col-md-3">col md 3</div>
+            <div class="col col-md-3">col md 3</div>
+            <div class="col col-md-3">col md 3</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-2">col md 2</div>
+            <div class="col col-md-2">col md 2</div>
+            <div class="col col-md-2">col md 2</div>
+            <div class="col col-md-2">col md 2</div>
+            <div class="col col-md-2">col md 2</div>
+            <div class="col col-md-2">col md 2</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+            <div class="col col-md-1">col md 1</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-12">
+            <h2>Window Types</h2>
+            <p>There are different types of windows with following characteristics:</p>
+            <ul>
+                <li>Normal</li>
+                <li>Dark-Content Background</li>
+                <li>Tabs</li>
+                <li>Tabs in Footer</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container--fluid">
+    <div class="row sg-windows">
+        <div class="col col-md-3">
+            <section class="window">
+                <header class="window__Header">
+                    <p class="move"></p>
+                    <a class="mini">ablegen</a>
+                    <a class="close">schlie&szlig;en</a>
+                </header>
+                <h1>Normal</h1>
+                <article class="window__Content">
+                    <p>
+                        Lorem ipsum
+                    </p>
+                </article>
+            </section>
+        </div>
+        <div class="col col-md-3">
+            <section class="window">
+                <header class="window__Header">
+                    <p class="move"></p>
+                    <a class="mini">ablegen</a>
+                    <a class="close">schlie&szlig;en</a>
+                </header>
+                <h1>Dark-Content Background</h1>
+                <article class="window__Content dark">
+                    <p>
+                        Lorem ipsum
+                    </p>
+                </article>
+            </section>
+        </div>
+        <div class="col col-md-3">
+            <section class="window">
+                <header class="window__Header">
+                    <p class="move"></p>
+                    <a class="mini">ablegen</a>
+                    <a class="close">schlie&szlig;en</a>
+                </header>
+                <h1>Tabs</h1>
+                <article class="window__Content tabs">
+                    <nav class="tabs__Nav row">
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#" class="active">Tab 1</a>
+                        </div>
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#">Tab 2</a>
+                        </div>
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#">Tab 3</a>
+                        </div>
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#">Tab 4</a>
+                        </div>
+                    </nav>
+                    <section class="tabs__Content row">
+                        <article class="col col-xs-12 active">
+                            <h2>Tab Content 1</h2>
+                        </article>
+                        <article class="col col-xs-12">
+                            <h2>Tab Content 2</h2>
+                        </article>
+                        <article class="col col-xs-12">
+                            <h2>Tab Content 3</h2>
+                        </article>
+                        <article class="col col-xs-12">
+                            <h2>Tab Content 4</h2>
+                        </article>
+                    </section>
+                </article>
+            </section>
+        </div>
+        <div class="col col-md-3">
+            <section class="window">
+                <header class="window__Header">
+                    <p class="move"></p>
+                    <a class="mini">ablegen</a>
+                    <a class="close">schlie&szlig;en</a>
+                </header>
+                <h1>Tabs in Footer</h1>
+                <article class="window__Content tabs">
+                    <section class="tabs__Content row">
+                        <article class="col col-xs-12 active">
+                            <h2>Tab Content 1</h2>
+                        </article>
+                        <article class="col col-xs-12">
+                            <h2>Tab Content 2</h2>
+                        </article>
+                        <article class="col col-xs-12">
+                            <h2>Tab Content 3</h2>
+                        </article>
+                        <article class="col col-xs-12">
+                            <h2>Tab Content 4</h2>
+                        </article>
+                    </section>
+                    <nav class="tabs__Nav footer row">
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#" class="active">Tab 1</a>
+                        </div>
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#">Tab 2</a>
+                        </div>
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#">Tab 3</a>
+                        </div>
+                        <div class="col col-xs-6 col-sm-3">
+                            <a href="#">Tab 4</a>
+                        </div>
+                    </nav>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-12">
+            <h2>Table</h2>
+            <div class="table">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Table Header 1</th>
+                        <th>Table Header 2</th>
+                        <th>Table Header 3</th>
+                        <th>Table Header 4</th>
+                        <th>Table Header 5</th>
+                        <th>Table Header 6</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                        <td>Content</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>TFoot</td>
+                        <td>TFoot</td>
+                        <td>TFoot</td>
+                        <td>TFoot</td>
+                        <td>TFoot</td>
+                        <td>TFoot</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12">
+            <h2>Buttons</h2>
+            <p>
+                Examples of all tyes of buttons in the system
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12">
+            <h3>Buttons without style</h3>
+            <p>
+                <button>Button</button>
+                <a href="#" class="btn">a.btn</a>
+                <input type="button" value="input['button']">
+                <input type="submit" value="input['submit']">
+            </p>
+            <h3>Styled Buttons</h3>
+            <p>
+                Styled buttons should be used on suiting situations. Color are basically inspired by Bootstrap 3
+                colors.
+            </p>
+            <p>
+                <button class="btn btn--primary">Primary</button>
+                <button class="btn btn--secondary">Secondary</button>
+                <button class="btn btn--success">Success</button>
+                <button class="btn btn--danger">Danger</button>
+                <button class="btn btn--warning">Warning</button>
+                <button class="btn btn--link">Link</button>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12">
+            <h2>Forms</h2>
+            <p>
+                There are two different types of forms: The simple <strong>basic form</strong> and the
+                <strong>inline form</strong>.<br>
+                Both of the have the same markup and only differ in a single CSS class:
+                <code>.inline</code>
+            </p>
+            <h3>Basic form</h3>
+            <p>
+                The basic form just puts one thing at a time.
+            </p>
+            <form class="form">
+                <fieldset class="form__Group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form__Control" id="name" placeholder="Name">
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form__Control" name="password" placeholder="sdfsdf">
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="name">Success</label>
+                    <input type="text" class="form__Control success" id="name" placeholder="Name">
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="name">Error</label>
+                    <input type="text" class="form__Control error" id="name" placeholder="Name">
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="name">Warning</label>
+                    <input type="text" class="form__Control warning" id="name" placeholder="Name">
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="select">Select</label>
+                    <select class="form__Control" id="select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="multi-select">Multiple Select</label>
+                    <select multiple class="form__Control" id="multi-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="textarea">Textarea</label>
+                    <textarea class="form__Control" id="textarea" rows="3"></textarea>
+                </fieldset>
+                <fieldset class="form__Group">
+                    <label for="file">File</label>
+                    <input type="file" class="form__Control file" id="file">
+                    <small>
+                        Some additional text to explain the controls limitation such as file-types.
+                    </small>
+                </fieldset>
+                <div class="radio">
+                    <input type="radio" name="optionRadios" id="option-1" value="option-1" checked>
+                    <label for="option-1">Option one</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optionRadios" id="option-2" value="option-2">
+                    <label for="option-2">Option 2</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="optionRadios" id="option-3" value="option-3" disabled>
+                    <label for="option-3">Option 3 (disabled)</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox-1">
+                    <label for="checkbox-1"> Checkbox </label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" disabled id="checkbox-2">
+                    <label for="checkbox-2"> Checkbox (disabled) </label>
+                </div>
+                <div class="form__Group">
+                    <label for="range">Range</label>
+                    <input type="range" id="range" min="0" max="400" step="any">
+                </div>
+                <div class="switch">
+                    <input type="checkbox" id="on-off-switch">
+                    <label for="on-off-switch">Switch</label>
+                </div>
+                <div class="form__Group">
+                    <input type="submit" class="btn btn--success" value="Submit">
+                </div>
+            </form>
+            <h3>Inline Form</h3>
+            <p>
+                An inline form tries to put as much elements in a row as possible. If you want to create
+                a mixture of vertical and horizontal elements use the basic form combined with a grid.
+            </p>
+            <form class="form form--inline">
+                <fieldset class="form__Group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form__Control" id="name" placeholder="Name">
+                    <label for="password">Password</label>
+                    <input type="password" class="form__Control" name="password" placeholder="sdfsdf">
+                    <input type="submit" class="btn btn--success" value="Submit">
+                </fieldset>
+                <p>
+                    Radio buttons and Checkboxes need additional classes to put them in a row
+                </p>
+                <div class="radio radio--inline">
+                    <input type="radio" name="optionRadios" id="option-inline-1" value="option-1" checked>
+                    <label for="option-inline-1">Option one</label>
+                </div>
+                <div class="radio radio--inline">
+                    <input type="radio" name="optionRadios" id="option-inline-2" value="option-2">
+                    <label for="option-inline-2">Option 2</label>
+                </div>
+                <div class="radio radio--inline">
+                    <input type="radio" name="optionRadios" id="option-inline-3" value="option-3" disabled>
+                    <label for="option-inline-3">Option 3 (disabled)</label>
+                </div>
+                <div class="checkbox checkbox--inline">
+                    <input type="checkbox" id="checkbox-inline-1">
+                    <label for="checkbox-inline-1"> Checkbox </label>
+                </div>
+                <div class="checkbox checkbox--inline">
+                    <input type="checkbox" disabled id="checkbox-inline-2">
+                    <label for="checkbox-inline-2"> Checkbox (disabled) </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row sg-windows">
+        <div class="col col-md-12">
+            <section class="window">
+                <header class="window__Header">
+                    <p class="move"></p>
+                    <a class="mini">ablegen</a>
+                    <a class="close">schlie&szlig;en</a>
+                </header>
+                <h1>Sidebar Navigation</h1>
+                <article class="window__Content aside">
+                    <nav class="col col-md-3">
+                        <ul>
+                            <li><a class="active" href="#">Link</a></li>
+                            <li><a href="#">Thats a quite long link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </nav>
+                    <section class="col col-md-9 active">
+                        <h2>H2 Title as a Title</h2>
+                        <p>There is more than one section. This sections must be handled with JavaScript.</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </section>
+                </article>
+                <section class="window__Footer">
+                    Some window footer content ...
+                </section>
+            </section>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
