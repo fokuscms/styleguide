@@ -1,0 +1,88 @@
+html, body, input, select, textarea, button {
+  color: $color;
+  font-family: $font-droid-sans;
+  font-size: $base-font-size;
+}
+
+body {
+  background: $color-background url("../images/background.png") no-repeat right top;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.67em 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 0.67em 0;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 0.67em 0;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0.67em 0;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 2rem;
+
+  li {
+    list-style: disc;
+  }
+
+}
+
+a {
+  color: $color-blue-dark;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+.clr, .clear {
+  display: block;
+  float: none;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+small, .small {
+  font-size: $base-font-size*0.9;
+}

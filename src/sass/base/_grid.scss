@@ -1,0 +1,105 @@
+/*
+ * @version 1.0
+ * @author Rathes Sachchithananthan
+ * 
+ */
+
+.container {
+  margin: 0 auto;
+  max-width: 992px;
+  position: relative;
+}
+
+.col {
+  padding: 0 1rem;
+}
+
+.row {
+  @include clear();
+}
+
+@for $i from 1 through 12 {
+
+  @media(min-width: $xs){
+    .col-xs-#{$i}{
+      float: left;
+      min-height: 1px;
+      padding: 0 1rem;
+      width: $i * 100% / 12
+    }
+
+    .offset-xs-#{$i}{
+      margin-left: $i * 100% / 12
+    }
+  }
+
+}
+
+@for $i from 1 through 12 {
+
+  @media(min-width: $sm){
+    .col-sm-#{$i}{
+      float: left;
+      min-height: 1px;
+      padding: 0 1rem;
+      width: $i * 100% / 12
+    }
+
+    .offset-sm-#{$i}{
+      margin-left: $i * 100% / 12
+    }
+  }
+
+}
+
+@for $i from 1 through 12 {
+
+  @media(min-width: $md){
+    .col-md-#{$i}{
+      float: left;
+      min-height: 1px;
+      padding: 0 1rem;
+      width: $i * 100% / 12
+    }
+
+    .offset-md-#{$i}{
+      margin-left: $i * 100% / 12
+    }
+  }
+
+}
+
+@for $i from 1 through 12 {
+
+  @media(min-width: $lg){
+    .col-lg-#{$i}{
+      float: left;
+      min-height: 1px;
+      padding: 0 1rem;
+      width: $i * 100% / 12
+    }
+
+    .offset-lg-#{$i}{
+      margin-left: $i * 100% / 12
+    }
+  }
+
+}
+
+@for $i from 1 through 12 {
+
+  @media(min-width: $xl){
+    .col-xl-#{$i}{
+      float: left;
+      min-height: 1px;
+      padding: 0 1rem;
+      width: $i * 100% / 12
+    }
+
+    .offset-xl-#{$i}{
+      margin-left: $i * 100% / 12
+    }
+  }
+  
+
+}

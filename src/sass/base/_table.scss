@@ -1,0 +1,50 @@
+
+.table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  display: table;
+  margin: 0 auto;
+}
+
+thead, .thead {
+}
+
+th, .th {
+  border: solid 1px $border-color;
+  border-bottom-width: 2px;
+  display: table-cell;
+  padding: 1rem;
+}
+
+tr, .tr {
+  &:nth-of-type(odd){
+    td {
+      background: $color-light-grey;
+    }
+  }
+}
+
+td, .td {
+  border: solid 1px $border-color;
+  display: table-cell;
+  padding: 10px;
+}
+
+tfoot {
+
+  tr, tr:nth-of-type(odd) {
+
+    td {
+      background: none;
+      border-top-width: 2px;
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+    }
+
+  }
+
+}

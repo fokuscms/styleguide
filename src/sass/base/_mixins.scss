@@ -1,0 +1,144 @@
+@mixin bp($width) {
+  @media screen and (max-width: $width){
+    @content;
+  }
+}
+
+@mixin bpmin($width) {
+  @media screen and (min-width: $width){
+    @content;
+  }
+}
+
+@mixin opacity($opacity: 1) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin transition($transition_seconds: 0.5s, $transition_mode: all, $transition_effect: ease-in-out) {
+  -webkit-transition: $transition_mode $transition_seconds $transition_effect;
+  -moz-transition: $transition_mode $transition_seconds $transition_effect;
+  -o-transition: $transition_mode $transition_seconds $transition_effect;
+  transition: $transition_mode $transition_seconds $transition_effect;
+}
+
+@mixin position($position: absolute, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  @include position(absolute, $top, $right, $bottom, $left);
+}
+
+@mixin fixed($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  @include position(fixed, $top, $right, $bottom, $left);
+}
+
+@mixin rounded($radius: 50%) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin button($background: #000, $color: #fff, $background_hover: #fff, $color_hover: #000) {
+  display: inline-block;
+  line-height: 1;
+  padding: 10px 15px;
+  text-align: center;
+  margin: 5px 0;
+  border-radius: 2px;
+  text-decoration: none;
+  background: $background;
+  color: $color;
+
+  &:hover {
+    background: $background_hover;
+    color: $color_hover;
+  }
+}
+
+@mixin slider-circle($size: 10px, $color: #fff, $active: #eee, $margin: 5px) {
+  div {
+    display: inline;
+
+    a {
+      background: $color;
+      width: $size;
+      height: $size;
+      margin: 0 $margin;
+      float: left;
+      display: block;
+      border-radius: 50%;
+      overflow: hidden;
+      text-indent: 99px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
+
+    a.active, a:hover {
+      background: $active;
+    }
+  }
+}
+
+// grid mixins
+@mixin row ($width: 100%){
+  margin: 0 auto;
+  max-width: $width;
+  width: 100%;
+  @include clear();
+}
+
+@mixin clear(){
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }
+  &:after {
+    clear:both;
+  }
+}
+
+@mixin cols ( $colspan : 1, $total_cols : 12 ) {
+  display: block;
+  float: left;
+  width: ( $colspan * (100 / $total_cols) ) + 0%;
+}
+
+// flag mixin
+@mixin flag ($left, $top, $size: 'small'){
+  @if $size == 'small' {
+    background-position-x: 0-($left * 24px);
+    background-position-y: 0-($top * 16px);
+  } @else if $size == 'large' {
+    background-position-x: 0-($left * 48px);
+    background-position-y: 0-($top * 32px);
+  }
+}

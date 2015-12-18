@@ -1,0 +1,277 @@
+.form {
+  padding: 1rem 0;
+}
+
+.form__Control {
+  border: solid 1px $secondary-color-hover;
+  display: block;
+  line-height: 1.6;
+  max-width: 100%;
+  outline: none;
+  padding: 0.375rem 1rem;
+  width: 100%;
+  @include transition(border);
+
+  &.file {
+    border: none;
+    padding: 0.5rem 0;
+
+    ~ small {
+      color: $color-grey-dark;
+      display: block;
+      line-height: 1.45;
+      max-width: 100%;
+    }
+  }
+
+  &:focus {
+    border-color: $border-color;
+  }
+
+  &.success {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNoZWNrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM1Q0I4NUMiIGQ9Ik0yMzMuOCw2MTAuMWMtMTMuMywwLTI1LjktNi4yLTM0LTE2LjlMOTAuNSw0NDguOEM3Ni4zLDQzMCw4MCw0MDMuMyw5OC44LDM4OS4xYzE4LjgtMTQuMyw0NS41LTEwLjUsNTkuOCw4LjNsNzEuOSw5NWwyMjAuOS0yNTAuNWMxMi41LTIwLDM4LjgtMjYuMSw1OC44LTEzLjZjMjAsMTIuNCwyNi4xLDM4LjcsMTMuNiw1OC44TDI3MCw1OTBjLTcuNCwxMi0yMC4yLDE5LjQtMzQuMywyMC4xQzIzNS4xLDYxMC4xLDIzNC41LDYxMC4xLDIzMy44LDYxMC4xeiIvPjwvc3ZnPg==);
+    background-position: center right 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.54375rem 1.54375rem;
+    border-color: $success-color;
+    padding-right: 2.25rem;
+  }
+
+  &.error {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNyb3NzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMiA3OTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYxMiA3OTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNEOTUzNEYiIGQ9Ik00NDcsNTQ0LjRjLTE0LjQsMTQuNC0zNy42LDE0LjQtNTEuOSwwTDMwNiw0NTEuN2wtODkuMSw5Mi43Yy0xNC40LDE0LjQtMzcuNiwxNC40LTUxLjksMGMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlsOTIuNC05Ni40TDE2NSwyOTkuNmMtMTQuNC0xNC40LTE0LjQtMzcuNiwwLTUxLjlzMzcuNi0xNC40LDUxLjksMGw4OS4yLDkyLjdsODkuMS05Mi43YzE0LjQtMTQuNCwzNy42LTE0LjQsNTEuOSwwYzE0LjQsMTQuNCwxNC40LDM3LjYsMCw1MS45TDM1NC43LDM5Nmw5Mi40LDk2LjRDNDYxLjQsNTA2LjgsNDYxLjQsNTMwLDQ0Nyw1NDQuNHoiLz48L3N2Zz4=);
+    background-position: center right 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.54375rem 1.54375rem;
+    border-color: $danger-color;
+    padding-right: 2.25rem;
+  }
+
+  &.warning {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9Ildhcm5pbmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjEyIDc5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjEyIDc5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iI0YwQUQ0RSIgZD0iTTYwMyw2NDAuMmwtMjc4LjUtNTA5Yy0zLjgtNi42LTEwLjgtMTAuNi0xOC41LTEwLjZzLTE0LjcsNC4xLTE4LjUsMTAuNkw5LDY0MC4yYy0zLjcsNi41LTMuNiwxNC40LDAuMiwyMC44YzMuOCw2LjUsMTAuOCwxMC40LDE4LjMsMTAuNGg1NTcuMWM3LjUsMCwxNC41LTMuOSwxOC4zLTEwLjRDNjA2LjYsNjU0LjYsNjA2LjcsNjQ2LjYsNjAzLDY0MC4yeiBNMzM2LjYsNjEwLjJoLTYxLjJWNTQ5aDYxLjJWNjEwLjJ6IE0zMzYuNiw1MDMuMWgtNjEuMlYzMDQuMmg2MS4yVjUwMy4xeiIvPjwvc3ZnPg==);
+    background-position: center right 0.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.54375rem 1.54375rem;
+    border-color: $warning-color;
+    padding-right: 2.25rem;
+  }
+
+}
+
+.form__Group {
+  margin: 0 auto 1rem auto;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1px 0;
+  @include clear();
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+
+//////
+
+
+/// checkbox
+&.checkbox {
+  margin: 0 auto 1rem auto;
+  max-width: 100%;
+  overflow: auto;
+  @include clear();
+
+  input {
+    cursor: pointer;
+    display: none;
+
+    + label {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      &:before {
+        background: url("../images/icons-16.png") no-repeat 0 0;
+        content: " ";
+        display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        margin-right: 5px;
+        vertical-align: middle;
+        width: 16px;
+      }
+      &.small {
+        span {
+          line-height: 16px;
+          vertical-align: middle;
+        }
+      }
+    }
+    &:checked {
+      + label {
+        &:before {
+          background-position: -16px 0;
+        }
+      }
+    }
+    &:disabled {
+      + label {
+        &:before {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  &--inline {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+}
+
+/// radio
+&.radio {
+  margin: 0 auto 1rem auto;
+  max-width: 100%;
+  overflow: auto;
+  @include clear();
+
+  input {
+    cursor: pointer;
+    display: none;
+
+    + label {
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      &:before {
+        background: url("../images/icons-16.png") no-repeat 0 -16px;
+        content: " ";
+        display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        margin-right: 5px;
+        vertical-align: middle;
+        width: 16px;
+      }
+      &.small {
+        span {
+          line-height: 16px;
+          vertical-align: middle;
+        }
+      }
+    }
+    &:checked {
+      + label {
+        &:before {
+          background-position: -16px -16px;
+        }
+      }
+    }
+    &:disabled {
+      + label {
+        &:before {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  &--inline {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+/// switch
+.switch {
+  margin: 0 auto 1rem auto;
+  max-width: 100%;
+  overflow: auto;
+  @include clear();
+
+  input {
+    cursor: pointer;
+    display: none;
+
+    + label {
+      cursor: pointer;
+      display: inline-block;
+      line-height: 16px;
+      position: relative;
+      vertical-align: middle;
+
+      &:before {
+        background-color: $color-grey;
+        border: solid 1px $color-grey;
+        content: " ";
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 5px;
+        vertical-align: middle;
+        width: 40px;
+        @include border-radius(10px);
+        @include transition(100ms);
+      }
+
+      &:after {
+        background-color: $color-grey-dark;
+        content: " ";
+        display: inline-block;
+        height: 10px;
+        left: 5px;
+        line-height: 16px;
+        margin-right: 5px;
+        position: absolute;
+        top: 4.5px;
+        vertical-align: middle;
+        width: 10px;
+        @include border-radius(50%);
+        @include transition(100ms);
+      }
+
+    }
+
+    &:checked {
+
+      + label {
+
+        &:before {
+          background-color: transparent;
+          border: solid 1px $success-color-hover;
+        }
+
+        &:after {
+          background-color: $success-color-hover;
+          left: 26px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &--inline {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+}
+
+.form--inline {
+
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  .form__Control {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+
+}
